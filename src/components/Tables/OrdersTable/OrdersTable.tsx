@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -119,7 +120,7 @@ function UserTableComponent() {
             variant='ghost'
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
-            Order Number
+            Id
             <Icon name='sort' svgProp={{ className: 'ml-2 h-3 w-2' }} />
           </Button>
         );
@@ -142,7 +143,7 @@ function UserTableComponent() {
             variant='ghost'
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
-            Driver
+            Name
             <Icon name='sort' svgProp={{ className: 'ml-2 h-3 w-2' }} />
           </Button>
         );
@@ -155,28 +156,28 @@ function UserTableComponent() {
         // </Link>
       ),
     },
-    {
-      accessorKey: 'items',
-      header: ({ column }) => {
-        return (
-          <Button
-            className='px-0 text-[0.71rem]  font-semibold'
-            variant='ghost'
-            onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
-          >
-            Items
-            <Icon name='sort' svgProp={{ className: 'ml-2 h-3 w-2' }} />
-          </Button>
-        );
-      },
-      cell: ({ row }) => (
-        // <Link to={`/mc/${CONSTANTS.ROUTES['overview']}}`}>
-        <div className='flex w-fit items-center   gap-2 rounded-lg'>
-          <p className='text-center text-[0.71rem]  '>{row.getValue('items')}</p>
-        </div>
-        // </Link>
-      ),
-    },
+    // {
+    //   accessorKey: 'items',
+    //   header: ({ column }) => {
+    //     return (
+    //       <Button
+    //         className='px-0 text-[0.71rem]  font-semibold'
+    //         variant='ghost'
+    //         onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+    //       >
+    //         Items
+    //         <Icon name='sort' svgProp={{ className: 'ml-2 h-3 w-2' }} />
+    //       </Button>
+    //     );
+    //   },
+    //   cell: ({ row }) => (
+    //     // <Link to={`/mc/${CONSTANTS.ROUTES['overview']}}`}>
+    //     <div className='flex w-fit items-center   gap-2 rounded-lg'>
+    //       <p className='text-center text-[0.71rem]  '>{row.getValue('items')}</p>
+    //     </div>
+    //     // </Link>
+    //   ),
+    // },
 
     {
       accessorKey: 'user',
@@ -187,7 +188,7 @@ function UserTableComponent() {
             variant='ghost'
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
-            Customer
+            Title
             <Icon name='sort' svgProp={{ className: 'ml-2 h-3 w-2' }} />
           </Button>
         );
@@ -232,7 +233,7 @@ function UserTableComponent() {
       header: ({ column }) => {
         return (
           <Button className='px-0 text-[0.71rem]  font-semibold' variant='ghost'>
-            Time of Delivery
+            Date
           </Button>
         );
       },

@@ -1,12 +1,12 @@
 import CONSTANTS from 'constant';
-import Orders from 'pages/app/orders';
+import Orders from 'pages/app/jobs';
 import Users from 'pages/app/users';
-import Products from 'pages/app/products';
+import Products from 'pages/app/payments';
 import CreateCoupon from 'pages/app/create-coupon';
 import FoodBundles from 'pages/app/food-bundles';
 import FlashSales from 'pages/app/flash-sales';
 import Dashboard from 'pages/app/dashboard';
-import Categories from 'pages/app/categories';
+import Categories from 'pages/app/candidates';
 import Notifications from 'pages/app/notifications';
 import MasterClasses from 'pages/app/master-classes';
 import Coupons from 'pages/app/coupons';
@@ -19,7 +19,7 @@ import CreateCategory from 'pages/app/create-category';
 import CreateSubCategory from 'pages/app/create-subCategory';
 import CreateNewProduct from 'pages/app/create-new-product';
 import CreateFoodBundle from 'pages/app/create-food-bundle';
-import CreateFlashSale from 'pages/app/create-flash-sale';
+import CreateFlashSale from 'pages/app/business-users';
 
 const internalRoute: routeTypes = [
   {
@@ -36,7 +36,7 @@ const internalRoute: routeTypes = [
   },
   {
     element: <Categories />,
-    path: 'categories',
+    path: 'candidates',
   },
   {
     element: <Users />,
@@ -49,15 +49,15 @@ const internalRoute: routeTypes = [
 
   {
     element: <Orders />,
-    path: 'orders',
+    path: 'jobs',
   },
   {
     element: <FlashSales />,
-    path: 'flash-sales',
+    path: 'business-users',
   },
   {
     element: <Products />,
-    path: 'products',
+    path: 'payment',
   },
   {
     element: <CreateCoupon />,

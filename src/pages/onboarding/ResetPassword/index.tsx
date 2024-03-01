@@ -12,6 +12,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import customerService from 'services/customer';
 import { useMutation } from '@tanstack/react-query';
 import { resetPasswordFormSchema, resetPasswordInterface } from './reset.model';
+import Logo from 'assets/image/logo.png';
 
 import useStore from 'store';
 import { ArrowLeft } from 'lucide-react';
@@ -55,7 +56,8 @@ const ResetPassword = () => {
         <div className='mx-auto flex w-full flex-col items-start justify-center gap-8'>
           <div className='flex w-full flex-col items-center gap-8'>
             <div className=' flex cursor-pointer items-center' onClick={() => navigate(`/`)}>
-              <Icon name='nfmLogo' svgProp={{ className: 'w-[8rem] h-[5rem]' }} />
+              {/* <Icon name='nfmLogo' svgProp={{ className: 'w-[8rem] h-[5rem]' }} /> */}
+              <img src={Logo} alt='logo' className='h-full w-[10rem]' />
             </div>
 
             <h5 className='tracking-[0.18px]] font-inter text-[20px] font-[600] leading-[32px]'>

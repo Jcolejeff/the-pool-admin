@@ -217,7 +217,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <div>
-                <p className='text-end text-xs font-medium'>Recent orders</p>
+                <p className='text-end text-xs font-medium'>Recent jobs</p>
 
                 <div className='mt-6 space-y-4'>
                   <div className=' flex  items-center gap-2 '>

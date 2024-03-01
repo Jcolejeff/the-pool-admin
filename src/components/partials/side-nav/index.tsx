@@ -71,7 +71,7 @@ export const sideNavLinks: extendedRouteInterface[] = [
   },
 
   {
-    link: 'orders',
+    link: 'jobs',
     title: 'Jobs',
     icons: (
       <Icon
@@ -85,7 +85,7 @@ export const sideNavLinks: extendedRouteInterface[] = [
     ),
   },
   {
-    link: 'products',
+    link: 'payment',
     title: 'Payments',
     icons: (
       <Icon
@@ -99,7 +99,7 @@ export const sideNavLinks: extendedRouteInterface[] = [
     ),
   },
   {
-    link: 'categories',
+    link: 'candidates',
     title: 'Candidates',
     icons: (
       <Icon
@@ -113,7 +113,7 @@ export const sideNavLinks: extendedRouteInterface[] = [
     ),
   },
   {
-    link: 'flash-sales',
+    link: 'business-users',
     title: 'Business Users',
     icons: (
       <Icon

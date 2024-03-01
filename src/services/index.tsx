@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const baseURL = import.meta.env.VITE_USE_PROXY === 'true' ? '/api' : import.meta.env.VITE_API_URL;
-const baseURL = 'https://api-mfa-dashboard.onrender.com';
+const baseURL = 'https://pool-app-ss7a.onrender.com/api/v1';
 
 // api with auth
 const store = JSON.parse(localStorage.getItem('store') || '{}');

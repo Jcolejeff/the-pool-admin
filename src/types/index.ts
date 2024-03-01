@@ -15,21 +15,21 @@ export type routePathTypes =
   | 'create-new-product'
   | 'create-account'
   | 'blogs'
-  | 'orders'
-  | 'products'
+  | 'jobs'
+  | 'payment'
   | 'create-coupon'
   | 'food-bundles'
-  | 'flash-sales'
+  | 'business-users'
   | 'notifications'
   | 'coupons'
   | 'user-profile'
-  | 'categories'
+  | 'candidates'
   | 'create-category'
   | 'create-coupons'
   | 'create-food-bundle'
   | 'create-sub-category'
   | 'create-flash-sale'
-  | 'categories';
+  | 'candidates';
 
 export interface routesInterface<T> {
   path: T;

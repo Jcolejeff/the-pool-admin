@@ -52,13 +52,13 @@ const generalFilters: filterTypes[] = [
   'Starred',
 ];
 
-const BusinessUsers = () => {
+const OrdersPage = () => {
   const [position, setPosition] = useState('bottom');
 
   return (
     <div className='container flex h-full w-full max-w-[180.75rem] flex-col  overflow-auto px-container-md pb-[2.1rem]'>
       <div className='flex justify-between '>
-        <h3 className='  text-base font-semibold md:text-2xl'>Business Users</h3>
+        <h3 className='  text-base font-semibold md:text-2xl'>Track Jobs</h3>
         <div>
           <p className='mb-6 text-end  text-[0.75rem] text-gray-400'>
             Today: 10:23am, 30th Oct 2023
@@ -96,4 +96,4 @@ const BusinessUsers = () => {
   );
 };
 
-export default BusinessUsers;
+export default OrdersPage;

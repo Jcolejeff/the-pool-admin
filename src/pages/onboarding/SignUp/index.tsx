@@ -27,6 +27,7 @@ import { authFirebase, db, storage } from 'firebase';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import useStore from 'store';
+import Logo from 'assets/image/logo.png';
 
 const SignUp = () => {
   const navigate = useNavigate();
